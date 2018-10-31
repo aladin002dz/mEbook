@@ -1,0 +1,604 @@
+/*------------------------------------------------------------------------------
+
+        -	mEbook -
+        Style Sheet 
+
+version:   	1.0
+date:      	10/22/2018
+author:		  AladinStudio
+link:     	https://www.aladindev.com
+
+---------------------------------------------------------------------------------*/
+
+/* Table of Content: ============================================================
+1-Fonts
+2-Colors
+3-Spacing
+4-Separator Shape
+5-Hero Section
+6-Section Author
+7-Section Video
+8-Section Testimonials Slider
+9-Scroll to top Button
+10-Preloader
+11-Responsive Adjustments
+===================================================--===========================*/
+
+/*----------------------------------------------
+1-Fonts ----------------------------------------
+-----------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400|Poppins:500,700');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#section-content .icon {
+  font-size: 4rem;
+}
+
+#section-content h3 {
+  font-size: 3rem;
+}
+
+.navbar-shrink .navbar-brand h3 {
+  font-size: 1.5rem;
+}
+
+/*---------------------------------------------
+2-Colors --------------------------------------
+-----------------------------------------------*/
+
+h2 {
+  color: #44bbff;
+}
+
+h2:after {
+  background-color: #44bbff;
+}
+
+#section-author h2,
+#section-testimonials h2 {
+  color: #fff;
+  background-color: #44bbff;
+}
+
+#section-hero {
+  color: #fff;
+  background-color: #fff;
+}
+
+#section-content .icon, #section-content h3 {
+  color: #44bbff;
+}
+
+#section-author,
+#section-testimonials,
+#section-reminder, 
+footer {
+  color: #fff;
+  background-color: #44bbff;
+}
+
+#section-author h2:after,
+#section-testimonials h2:after {
+  background-color: #fff;
+}
+
+#section-author h3 {
+  border-bottom: 1px solid #F9F9F9;
+}
+
+.frame {
+  border: 1px solid #44bbff;
+  background-color: #F9F9F9;
+}
+
+#section-message button {
+  background-color: #44bbff;
+}
+
+/* Buttons Colors --------------------------------------------------*/
+
+/* Call to Action Button Colors */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:visited {
+  background-color: #fff;
+  color: #44bbff;
+  border: none;
+  box-shadow: 12px 15px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #eeeeee;
+  color: #44bbff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Bar Colors */
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar button,
+.navbar button:focus{
+  color: #fff;
+  border: solid 1px #fff;
+  outline:none !important
+}
+
+.navbar-nav {
+  padding: 1rem 0;
+  background-color: #fff;
+  color: #44bbff;
+}
+
+
+.nav-item a:visited,
+.nav-item a:active,
+.nav-item a:link {
+  text-decoration: none;
+  color: #44bbff;
+}
+
+.nav-item a:hover {
+  text-decoration: none;
+  color: #44bbff;
+  border-left: 3px solid #44bbff;
+  background-color: #f9f9f9;
+}
+
+/* Shrink Navigation Bar */
+
+.navbar-shrink {
+  background-color: #44bbff;
+  opacity: 0.9;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
+}
+
+/* Slider Colors -----------------------------------------*/
+
+.carousel-indicators li {
+  background-color: #44bbff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #fff;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.carousel-control,
+.carousel-control:active {
+  background-color: #fff;
+  color: #44bbff!important;
+}
+
+.carousel-control:hover {
+  background-color: #fff;
+  color: #44bbff!important;
+}
+
+
+/*------------------------------------------------------------------
+3-Spacing ----------------------------------------------------------
+-------------------------------------------------------------------*/
+
+section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* Headers ------------------------------------------------*/
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+h2:after {
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: block;
+  height: 3px;
+  content: " ";
+  width: 10%;
+}
+
+/* Navigation Bar Spacing -----------------------------------------------*/
+
+.navbar {
+  padding: 1rem 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar button,
+.navbar button:focus{
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0;
+}
+
+.navbar-nav {
+  padding: 1rem 0;
+}
+
+.nav-item a:visited,
+.nav-item a:active,
+.nav-item a:link {
+  padding:0.5rem 2rem;
+}
+
+.navbar-brand img {
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Shrinked Navigation Bar Spacing  */
+
+.navbar-shrink {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-shrink .navbar-brand h3 {
+  font-size: 1.5rem;
+}
+
+.navbar-shrink .navbar-brand img {
+  width: 44px;
+  height: 44px;
+}
+
+.navbar-shrink .navbar-brand {
+  padding: 0;
+}
+
+/* Buttons Spacing */
+.btn {
+  border-radius: 100px;
+}
+
+.btn-circle {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+/*----------------------------------------------------------------*/
+
+#section-reminder {
+  margin-top: 5%;
+}
+
+
+/*-----------------------------------------------------------------
+4-Separator Shape -------------------------------------------------
+------------------------------------------------------------------*/
+svg {
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  z-index: -1;
+}
+
+/*----------------------------------------------------------------
+5-Hero Section ---------------------------------------------------
+-----------------------------------------------------------------*/
+
+#section-hero {
+  height: 100vh;
+  padding-top: 25vh;
+  background-image: url("../img/PathHero.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*----------------------------------------------------------------
+6-Section Author -------------------------------------------------
+-----------------------------------------------------------------*/
+
+#section-author img {
+  border-radius: 50%;
+}
+
+/* Social Links -------------------------------------------------*/
+.social-links {
+  list-style: none;
+  bottom: 0;
+}
+
+.social-links ul {
+  margin-bottom: 0%;
+  padding-inline-start: 0;
+}
+
+.social-links li {
+  display: inline;
+  margin-right: 1%;
+}
+
+.social-links a,
+.social-links a:link,
+.social-links a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #333;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.social-links i {
+  background-color: #fff;
+  color: #333;
+  display: inline-block;
+  margin: auto 3px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.social-links .fa-facebook-f:hover {
+  background-color: #3B5998;
+  color: #fff;
+}
+
+.social-links .fa-linkedin-in:hover {
+  background-color: #0077B5;
+  color: #fff;
+}
+
+.social-links .fa-twitter:hover {
+  background-color: #1DA1F2;
+  color: #fff;
+}
+
+.social-links .fa-google-plus-g:hover {
+  background-color: #d34836;
+  color: #fff;
+}
+
+/*---------------------------------------------------------------
+7-Section Video ------------------------------------------------
+----------------------------------------------------------------*/
+.video-frame {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%; 
+}
+
+.video-frame iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/*---------------------------------------------------------------
+8-Section Testimonials Slider ----------------------------------
+----------------------------------------------------------------*/
+
+#testimonials-carousel {
+  height: 20rem;
+}
+
+blockquote {
+  padding: 2%;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+cite {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.carousel-indicators {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.carousel-indicators ol {
+  margin-top: 1rem;
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+.carousel-control,
+.carousel-control:active {
+  top: 30%;
+  margin-top: 50px;
+  opacity: 1;
+}
+
+/*---------------------------------------------------------------
+9-Scroll to top Button -----------------------------------------
+----------------------------------------------------------------*/
+
+#scroll-to-top {
+
+  display: none;
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  z-index: 999;
+}
+
+#scroll-to-top i {
+  color: #fff;
+  background-color: #44bbff;
+  -webkit-box-shadow: 1px 1px 6px #333;
+  -moz-box-shadow: 1px 1px 6px #333;
+  -o-box-shadow: 1px 1px 6px #333;
+  box-shadow: 1px 1px 6px #333;
+}
+
+.display {
+  display: inline !important;
+}
+
+
+/*---------------------------------------------------
+10-Preloader ----------------------------------------
+----------------------------------------------------*/
+
+#preloader {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  margin-top: 0px;
+  top: 0px;
+  z-index: 999;
+
+}
+
+.circles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+}
+
+.circle {
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  border: 8px solid #d4d4d4;
+  border-top: 8px solid #44bbff;
+  border-radius: 50%;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*-------------------------------------------------------------
+11-Responsive Adjustments -------------------------------------
+---------------------------------------------------------------*/
+
+/* Extra Small Screens */
+@media (max-width: 575.98px) {
+
+    
+  #section-hero {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .navbar button,
+  .navbar button:focus{
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    border-radius: 10px;
+  }
+
+  .btn-circle {
+    text-align: center;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    border-radius: 44px;
+    font-size: 22px;
+  }
+
+  .carousel-control,
+  .carousel-control:active {
+    top: 70%;
+    margin-top: 50px;
+    opacity: 1;
+  }
+
+}
+
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1024px) { 
+
+  #section-hero {
+    padding-top: 15vh;
+    padding-bottom: 12vh;
+    height: auto;
+  }
+
+}
+
